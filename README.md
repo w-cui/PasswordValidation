@@ -19,7 +19,7 @@ Validates a password to conform to the following rules:
 - Supported special characters:
   * ! @ # $ % ^ & * ( ) + = _ - { } [ ] : ; " ' ? < > , .
 
-## Ideas:
+## Notes:
 
 Traditionally, the problem is simple enough to be solved by using if..else..
 branching. However, there are a few drawbacks:

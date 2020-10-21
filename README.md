@@ -19,20 +19,22 @@ Validates a password to conform to the following rules:
 - Supported special characters:
   * ! @ # $ % ^ & * ( ) + = _ - { } [ ] : ; " ' ? < > , .
 
-## Ideas:
+## Notes:
 
-Traditionally, the problem is simple enough to be solved by using if..else..
-branching. However, there are a few drawbacks:
+This branch is demonstrating that using if..else.. conditional
+branching to solve the problem. However, there are a few drawbacks:
   - code change required when rule changed or new rule added
   - hard to test
   - hard to read or understand
 
-Considering these limitations, using OOP concept and applying some SOLID principle 
-can solve this problem in a better way as in extensibility, reusability,
-testability and maintainability:
-  - IValidationRule interface is an abstraction, concrete rules can be simply
-    implemented as required
-  - Client has freedom to choose any combination of rules according to their
-    needs
-  - Each rule can be tested individually to reduce the bug
-  - Code is clean and easy to understand
+## Run tests:
+
+Enter following steps in Command Line terminal to run test:
+  cd PasswordService.Tests
+  dotnet test
+
+  ...
+  Test Run Successful.
+  Total tests: 14
+       Passed: 14
+  Total time: 9.3109 Seconds
